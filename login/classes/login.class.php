@@ -8,9 +8,7 @@
 
                 $pass = md5($pass);
 
-                $login = $pdo->prepare("SELECT * FROM usuarios WHERE usu_email = :usr AND usu_senha = :pass ");
-                $login->bindValue(':usr', $usr);
-                $login->bindValue(':pass', $pass);
+                $login = $pdo->prepare("SELECT * FROM usuarios WHERE usu_email = '$usr' AND usu_senha = '$pass' ");
                 //print_r($login);exit;
                 $login->execute();
 
