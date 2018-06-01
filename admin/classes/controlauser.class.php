@@ -18,12 +18,12 @@ $login = $controle->validaLogin($usuario, $senha);
 
 $direitos = $controle->valida_dir($nomep, $usuario);
 
+if($login == FALSE){
+	$redir->Directout("index.php");}
 if($direitos == FALSE){
 	include("classes/t_content.class.php");
 	$cont = new Content("html/erro500.html");
 	$cont->show();
 	exit;
 }
-if($login == FALSE){
-	$redir->Directout("index.php");}
 ?>

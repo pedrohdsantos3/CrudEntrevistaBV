@@ -4,19 +4,19 @@
 		class Redirect{
 
 			public function PegaServer(){
-				$urlbase = "http://testebv.agoraeuseconsagro.com.br/admin/";
+				$urlbase = "http://localhost/testeBevicred/admin/";
 
 				return $urlbase;
 			}
 
 			public function PegaSite(){
-				$urlbase = "http://testebv.agoraeuseconsagro.com.br/admin/";
+				$urlbase = "http://localhost/testeBevicred/admin/";
 
 				return $urlbase;
 			}
 
 			public function PegaSaida(){
-				$urlbase = "http://testebv.agoraeuseconsagro.com.br/login/";
+				$urlbase = "http://localhost/testeBevicred/login/";
 
 
 				return $urlbase;
